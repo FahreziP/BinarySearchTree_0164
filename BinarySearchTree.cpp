@@ -125,6 +125,10 @@ class BinaryTree{
         cout << ptr->info << " ";
         }
     }
+
+    bool isEmpty() {
+        return root == nullptr; // check if the tree is empty
+    }
 };
 
 int main(){
