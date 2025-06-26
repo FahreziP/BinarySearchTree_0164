@@ -68,6 +68,7 @@ class BinaryTree{
             // 7b: exit
             return;
         }
+    }
 
         void search(int element, Node *&parent, Node *&currentNode) {
             // This function searches the currentnode of the specified Node as well as the current Node of its parent
@@ -82,8 +83,6 @@ class BinaryTree{
                 }
             }
         }
-    }
-
 };
 
 int main(){
