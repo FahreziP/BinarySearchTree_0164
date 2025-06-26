@@ -70,8 +70,8 @@ class BinaryTree{
         }
     }
 
-        void search(int element, Node *&parent, Node *&currentNode) {
-            // This function searches the currentnode of the specified Node as well as the current Node of its parent
+    void search(int element, Node *&parent, Node *&currentNode) {
+        // This function searches the currentnode of the specified Node as well as the current Node of its parent
             currentNode = root;
             parent = nullptr;
             while ((currentNode != nullptr) && (currentNode->info != element)) {
@@ -83,6 +83,22 @@ class BinaryTree{
                 }
             }
         }
+    
+    void inorder(Node *ptr) {
+        if (isEmpty()){
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr == nullptr){
+            return;
+
+        inorder(ptr->leftchild);
+        cout << ptr->info << " ";
+        inorder(ptr->rightchild);
+        }
+    }
+
+
 };
 
 int main(){
