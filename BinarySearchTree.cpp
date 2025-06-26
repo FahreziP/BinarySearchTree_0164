@@ -15,7 +15,14 @@ class Node {
 };
 
 class BinaryTree{
-    
+    public:
+    Node *root;
+
+    BinaryTree(){
+        root = nullptr; // initialize root to null
+    }
+
+
 };
 
 int main(){
